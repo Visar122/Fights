@@ -1,0 +1,186 @@
+{
+    "fighters": [
+      {
+        "id": 1,
+        "name": "Muhammad Ali",
+        "record": "56-5-0",
+        "weight_class": "Heavyweight",
+        "status": "Retired",
+        "photo":"https://i.pinimg.com/564x/56/a1/ba/56a1bade0ad068d93740e522ab0c273f.jpg",
+        "Popularity":""
+        
+      },
+      {
+        "id": 2,
+        "name": "Anthony Joshua",
+        "record": "28-3-0",
+        "weight_class": "Heavyweight",
+        "status": "Active",
+        "photo": "https://www.thesun.co.uk/wp-content/uploads/2023/04/AJCUT.png",
+        "Popularity":"Popular"
+        
+      },
+      {
+        "id": 4,
+        "name": "Gervonta Davis",
+        "record": "29-0-0",
+        "weight_class": "Lightweight",
+        "status": "Active",
+        "upcoming_event": "June 12 Gerovnta Davis vs Frank Martin",
+        "photo": "https://pbs.twimg.com/media/Fu7VuagWcAM3kbr.jpg",
+         "Popularity":"Popular"
+      },
+      {
+        "id": 5,
+        "name": "Floyd Mayweather Jr.",
+        "record": "50-0-0",
+        "weight_class": "Welterweight",
+        "status": "Retired",
+        "photo": "https://i.pinimg.com/736x/35/bf/dc/35bfdc133e96bf08a3d517f0bb4aa3de.jpg",
+           "Popularity":""
+      },
+      {
+        "id": 6,
+        "name": "Manny Pacquiao",
+        "record": "62-7-2",
+        "weight_class": "Welterweight",
+        "status": "Retired",
+
+        "photo": "https://i.pinimg.com/564x/b1/55/7d/b1557d1cedb30bd68d29200d52c8feed.jpg",
+        "Popularity":"" 
+      },
+      {
+        "id": 7,
+        "name": "Canelo Alvarez",
+        "record": "61-2-2",
+        "weight_class": "Middleweight",
+        "status": "Active",
+        "photo": "https://i.pinimg.com/originals/d3/36/d0/d336d09dc5762319775f25bd71fc0f73.png",
+        "Popularity":"Popular"
+        
+      },
+    
+      {
+        "id": 8,
+        "name": "Mike Tyson",
+        "record": "50-6-0",
+        "weight_class": "Heavyweight",
+        "status": "Retired",
+        "photo": "https://i.pinimg.com/564x/0a/43/fe/0a43fe055faae11f42e9c8bd24d770bd.jpg",
+        "Popularity":""
+      },
+      {
+        "id": 9,
+        "name": "Jaron Ennis",
+        "record": "31-0-0",
+        "weight_class": "Welterweight",
+        "status": "Active",
+        "upcoming_event": "June 13 Jaron Ennis vs Cody Crowley",
+        "photo": "https://www.thesun.co.uk/wp-content/uploads/2021/11/NINTCHDBPICT000693004929.jpg",
+        "Popularity":"Popular"
+      },
+      {
+        "id": 10,
+        "name": "Frank Martin",
+        "record": "18-0-0",
+        "weight_class": "Lightweight",
+        "status": "Active",
+        "upcoming_event": "June 12 Gerovnta Davis vs Frank Martin",
+        "photo": "https://b.fssta.com/uploads/application/boxing/headshots/2227.png",
+        "Popularity":"Popular"
+      }
+    ,
+      { "id": 11,
+        "name": "Alex Pereira",
+        "record": "10-2-0",
+        "weight_class": "Middleweight",
+        "status": "Active",
+        "upcoming_event": "Boxing Night",
+        "photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/inline/s3/2023-03/GettyImages-1441106802.jpg?itok=tCT922ax",
+        "Popularity":"Popular"
+      },
+      { "id": 12,
+        "name": "Israel Adesanya",
+        "record": "24-3-0",
+        "weight_class": "Middleweight",
+        "status": "Active",
+        "photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2023-09/ADESANYA_ISRAEL_L_04-08.png?itok=FOMzxCwD",
+        "Popularity":"Popular"
+     },
+      { "id": 13,
+        "name": "Conor McGregor",
+        "record": "22-5-0",
+        "weight_class": "Lightweight",
+        "status": "Active",
+        "upcoming_event": "UFC 303 June 30",
+        "photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-07/MCGREGOR_CONOR_L_07-10.png?itok=xbg9Kwfj",
+        "Popularity":"Popular"
+      },
+      { "id": 14,
+        "name": "Khabib Nurmagomedov",
+        "record": "29-0-0",
+        "weight_class": "Lightweight",
+        "status": "Retired",
+        "photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/image/fighter_images/Khabib_Nurmagomedov/1NURMAGOMEDOV_KHABIB_L.png?itok=MDKzcpwv",
+         "Popularity":""
+      },
+      { "id": 15,
+        "name": "Jon Jones",
+        "record": "27-1-0",
+        "weight_class": "Light Heavyweight",
+        "status": "Active",
+        "upcoming_event": "UFC 303 June 30",
+        "photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2023-03/JONES_JON_L_BELT_03_04.png?itok=P6J6DQpm",
+        "Popularity":"Popular"
+      },
+
+      { "id": 16,
+        "name": "Islam  Makachev",
+        "record": "25-1-0",
+        "weight_class": "Light Heavyweight",
+        "status": "Active",
+        "upcoming_event": "UFC 302 June 2",
+        "photo": "https://gidstats.com/img/fighters/0/0/2-323.png",
+        "Popularity":"Popular"
+      }
+    
+ 
+    ],
+    "upcoming_events": [
+      {
+        "event": "UFC 303",
+        "date": "2024-30-06",
+        "location": "Las Vegas, NV",
+        "main_event": {
+          "fighters": [
+            {
+              "name": "Conor McGregor",
+              "photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-07/MCGREGOR_CONOR_L_07-10.png?itok=xbg9Kwfj"
+            },
+            {
+              "name": "Michael Chandler",
+              "photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-05/1dd9466e-5d52-4a1d-8af9-201e9af35e6a%252FCHANDLER_MICHAEL_L_05-07.png?itok=SGvqtEC7"
+            }
+          ]
+        }
+      },
+      {
+        "event": "Boxing Night",
+        "date": "2024-06-01",
+        "location": "New York, NY",
+        "main_event": {
+          "fighters": [
+            {
+              "name": "Floyd Mayweather Jr.",
+              "photo": "floyd_mayweather.jpg"
+            },
+            {
+              "name": "Manny Pacquiao",
+              "photo": "manny_pacquiao.jpg"
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

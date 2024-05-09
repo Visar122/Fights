@@ -1,0 +1,240 @@
+ .banner{
+        width: 100%;
+        height: 10vh;
+        background-color: rgb(255, 255, 255);
+    
+        background-size:cover;
+        background-position:center;  
+       
+       
+    
+     
+    }
+     .navbar{ 
+    /* Display flex og Justify Content: space between -  gør at der er afstand mellem logon og  listen  
+            Width 85% -gør at teksten kommer lidt væk fra hjørnet  
+            Padding- gør at teksten ligger ikke helt på topen 
+    
+            */
+            
+        width: 90%;
+       
+        margin:auto;
+       padding: -45px 0;
+       display : flex;
+        text-align: center;
+        justify-content: space-between;
+        font-weight:bold;
+        background: transparent;
+    
+    }
+    .Logo{
+        width: 100px;
+       top: 0%;
+     
+    
+      
+    
+         
+    
+    
+       
+    
+      
+    }
+      
+    .navbar ul li {
+      /* Display Inline-Block  - gør at  listen  står horizontal 
+          Margin 0 20 px - gør at ord som ligger i teksten har mellemrum mellem hinanden så  de er ikke klistret sammen 
+          Position -relative hjælper   med at vise den blå linje når du  pejer på listen 
+        */
+      list-style:none;
+      display:inline-block;
+      margin:0  30px;
+      position: relative;
+      top: 47%;
+    font-size: 0.9,5em;
+  
+  }
+  .navbar ul li a{
+      text-decoration: none;
+     color: rgb(0, 0, 0);
+      text-transform: uppercase;
+  
+  }
+  
+  .navbar ul li::after{  
+      /* Content - giver dig muligheden  til at lave den  orange linje 
+         Height- bestemmer hvor tyk skal den orange linje vær og linjen vises ikke hvis du ikke sætter height på den 
+         Width 0 - gør at det bliver ikke vist noget og når du peger på listen  listen kommer frem 
+         Position - gør det muligt  for linjen til at blive vist 
+         Left 0- gør at  linjen passer perfekt med teksten 
+         Bottom -10px -gør at linjen står lidt mere ned 
+  
+           
+       */
+      content: '';
+      height: 4px;
+      width: 0%;
+      background-color:#d39000;
+      
+      position: absolute;
+      left: 0;
+      bottom:-10px;
+      transition:0.5s;
+  }
+  .navbar ul li:hover:after{  
+      
+      /* hover er, hvad der sker  når musen på en skærm kommer til at ligge på et element på websiden, 
+       fx i mit program når jeg liggerm mussen på hjem listen så kommer der en linje frem
+       Width på hover sak lvær 100% så linjen kan  blive vist 
+      */
+      width:100%;
+   }
+  
+/* Styles for the navbar */
+.navbar {
+  width: 90%;
+  margin: auto;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  background: transparent;
+}
+
+/* Styles for the logo */
+.Logo {
+  width: 100px;
+}
+
+/* Styles for the search container */
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-left: 240px;
+  
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: 2px solid #fff0f0;
+  outline: none;
+  transition: border-color 0.3s, width 0.3s ease; /* Add transition for width */
+  background-color: white; /* Change background color to white */
+  width: 280px; /* Initial width */
+  overflow: hidden; /* Hide the overflow to prevent contents from being visible during animation */
+  box-shadow:  1px 1px 2px #d9d9d9,
+  -1px -1px 2px #ffffff;
+}
+
+.search-input:hover {
+  border-color: #007bff; /* Change to your desired focus color */
+  width: 350px; /* Increase width on focus */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Add box shadow on focus */
+}
+.search-input:focus {
+  border-color: #007bff; /* Change to your desired focus color */
+  width: 350px; /* Increase width on focus */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Add box shadow on focus */
+}
+.fighter-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 150px;
+  }
+  
+  .fighter-card {
+    width: 330px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 18px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    margin: 20px 60px;
+    height: 550px;
+  }
+  
+  .fighter-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .fighter-info {
+    padding: 20px;
+   
+  }
+  
+  .fighter-info h3 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .fighter-info p {
+    margin: 5px 0;
+  }
+  
+  .fighter-image {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .fighter-image img {
+    width: 100%;
+    height: auto;
+    background: transparent;
+    transition: transform 0.3s ease;
+  
+  }
+  
+  .fighter-image img:hover {
+    transform: scale(1.1);
+  }
+  
+  button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }/* Add styles for active and upcoming status */
+/* Add styles for status indicators */
+/* Add styles for status indicators */
+.status.active {
+  color: green;
+}
+
+.status.retired {
+  color: red;
+}
+
+.upcoming-event {
+  display: inline-block;
+  padding: 4px 8px;
+  background-color: #ff9800; /* Orange */
+  color: white;
+  border-radius: 4px;
+}
+
+/* Add any other styles you want for the fighter cards and container */
+
+/* Add spacing between comments */
+/* Styles for fighter container */
+.fighter-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

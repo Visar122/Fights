@@ -1,0 +1,118 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+<div class="navbar"> 
+    <img class="Logo" src="../assets/logo.jpg"> 
+    <ul>
+        <li style="color: white;"> <a href="#Home"> Home </a> </li>
+        <li> <a href="#page2"> Boxing Fights </a> </li>
+        <li style="color:white"><a href="#Aboutus"> UFC </a> </li>
+        <li style="color:white">
+            <a href="#" (click)="toggleSearch()">
+                <i class="fa-solid fa-magnifying-glass" style="color: black;"></i>
+            </a>
+            <input type="text" [(ngModel)]="searchTerm" (input)="searchFighter()" placeholder="Search Fighter" [hidden]="!showSearch">
+        </li>
+    </ul>
+</div>
+
+<hr>
+<img src="../assets/ali.jpg" style="margin-left: 0%;">
+
+<div class="grid" id="page2">
+    <div class="grid grid2"> </div>
+</div>
+
+<div class="intro"> 
+    <img class ="Big" src="../assets/tank1.jpg">  
+    <h2>Vores nye Modeller</h2>   
+    
+    <p style="float: right;">Vi har altid en bil, der passer til dine behov,  uanset om det gælder plug-in hybrider ,<br>
+       el- eller brændstofsbiler. Gå på opdagelse i vores Volkswagen modeller .<br><br>    <br> <br>
+       Tak for at besøge vores hjemmeside! Jeg er glad for, at din bilsøgning har bragt dig til os,<br> 
+        og jeg ser frem til at tilbyde jer alle den information, <br> om den fantastiske køretøjsmærke og modeller,vi har på området .<br> 
+<br> <br>    <br> <br>
+Vi er glade for at høre, at du er interesseret i mere information om os. Det fantastisk!<br> 
+Vi er  her for at hjælpe, så hvis der er nogle specifikke spørgsmål, du har om bilen, eller der er nogen information, <br>
+vi kan få til dig, skal du bare sende os en e-mail eller skrive til os på  vores telefonnummer .
+
+<br> <br>    <br> <br>
+       Har du nogle specifikke spørgsmål om en bil, eller er der andet, vi kan hjælpe dig med? <br> 
+       Så kan du kontakt os længere ned.
+       
+<br> <br>    <br> <br>
+Igen tak for din interesse Mvh Visar.
+    </p>
+    </div>
+
+<ul class="wrapper">
+    <li class="icon facebook">
+        <span class="tooltip">Facebook</span>
+        <span><i class="fab fa-facebook-f"></i></span>
+    </li>
+    <li class="icon twitter">
+        <span class="tooltip">Twitter</span>
+        <span><i class="fab fa-twitter"></i></span>
+    </li>
+    <li class="icon instagram">
+        <span class="tooltip">Instagram</span>
+        <span><i class="fab fa-instagram"></i></span>
+    </li>
+    <li class="icon github">
+        <span class="tooltip">Github</span>
+        <span><i class="fab fa-github"></i></span>
+    </li>
+    <li class="icon youtube">
+        <span class="tooltip">Youtube</span>
+        <span><i class="fab fa-youtube"></i></span>
+    </li>
+</ul>
+
+<hr>
+
+<li><a routerLink="/fighters">Fighter Records</a></li>
+
+<div class="flexbox-container" id="Side">
+    <div class="flexbox-item flexbox-item1">
+        <img src="../assets/Flexbox1.jpg" width="450px" height="300px">
+        <h2>The latest Fights</h2>
+        <p>We are always ready to showcase the latest fights
+            The latest event and upcoming events . </p>
+    </div>
+    <div class="flexbox-item flexbox-item2">
+        <img src="../assets/Flexbox2.jpg" width="450px" height="300px">
+        <h3>Information</h3>
+        <p>You can get the latest fight news here and info about fights
+            Get the latest fight infos </p>
+        <a href="E2qrv_EWUAEmZD7.jpg" style="color:blue"> 
+            Se alle modeller</a>
+    </div>
+    <div class="flexbox-item flexbox-item3">
+        <img src="../assets/Flexbox3.jpg" width="450px" height="300px">
+        <h3>Mandetorys</h3>
+        <p>You can check the mendatory fights ,
+            And also chechk the world ranked pound for pound list . </p>
+        <a href="E2qrv_EWUAEmZD7.jpg" style="color: blue;"> 
+            Se alle modeller</a>
+    </div>
+</div>
+
+<div class="content" id="Aboutus">
+    <hr>
+    <h1><i>About Us</i> </h1>
+    <p> <i>Vi er en virksomhed,der har som står fokus på biler.
+        Vi er meget intresserede i at give vores kunder den bedste oplevelse muligt </i> </p>
+    <div>
+        <button type=""button> <span>  </span> <i>  SE MERE HER </i> </button>
+        <button type=""button><span>  </span> <i> FØLG OS </i>  </button>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row main" *ngIf="fighter">
+    <div class="col-sm-6">
+      <img class="product-img" src="{{ fighter.photo }}" alt="{{ fighter.name }}">
+    </div>
+    <div class="col-sm-6">
+      <div class="details">
+        <h1>{{ fighter.name }}</h1>
+        <h3>Record: {{ fighter.record }}</h3>
+        <h3>Weight Class: {{ fighter.weight_class }}</h3>
+        <h3>Status: {{ fighter.status }}</h3>
+        <p *ngIf="fighter.upcoming_event">Upcoming Event: {{ fighter.upcoming_event }}</p>
+      </div>
+    </div>
+  </div>
+</div>
