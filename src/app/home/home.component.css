@@ -1,552 +1,667 @@
    
     html{
-        scroll-behavior:smooth;
-    
-    }
-    ::-webkit-scrollbar{ /* den fjerner scrollbar  */ 
-        width:85%;
-    }
-    ::-webkit-scrollbar-thumb{
-        background: rgb(211, 0, 0 / 1);
-    }
-    *{
-        margin:0;
-        padding:0;
-        font-family: sans-serif;
-        
-    }
-    .banner{
-        width: 100%;
-        height: 10vh;
-        background-color: rgb(255, 255, 255);
-    
-        background-size:cover;
-        background-position:center;  
-       
-       
-    
+      scroll-behavior:smooth;
+  
+  }
+  ::-webkit-scrollbar{ /* den fjerner scrollbar  */ 
+      width:85%;
+  }
+  ::-webkit-scrollbar-thumb{
+      background: rgb(211, 0, 0 / 1);
+  }
+  *{
+      margin:0;
+      padding:0;
+      font-family: sans-serif;
+      
+  }
+  .banner{
+      width: 100%;
+      height: 10vh;
+      background-color: rgb(255, 255, 255);
+  
+      background-size:cover;
+      background-position:center;  
      
-    }
-     .navbar{ 
-    /* Display flex og Justify Content: space between -  gør at der er afstand mellem logon og  listen  
-            Width 85% -gør at teksten kommer lidt væk fra hjørnet  
-            Padding- gør at teksten ligger ikke helt på topen 
-    
-            */
-            
-        width: 90%;
-       
-        margin:auto;
-       padding: -45px 0;
-       display : flex;
-        text-align: center;
-        justify-content: space-between;
-        font-weight:bold;
-        background: transparent;
-    
-    }
-    .Logo{
-        width: 100px;
-       top: 0%;
      
+  
+   
+  }
+   .navbar{ 
+  /* Display flex og Justify Content: space between -  gør at der er afstand mellem logon og  listen  
+          Width 85% -gør at teksten kommer lidt væk fra hjørnet  
+          Padding- gør at teksten ligger ikke helt på topen 
+  
+          */
+          
+      width: 90%;
+     
+      margin:auto;
+     padding: -45px 0;
+     display : flex;
+      text-align: center;
+      justify-content: space-between;
+      font-weight:bold;
+      background: transparent;
+  
+  }
+  .Logo{
+      width: 100px;
+     top: 0%;
+   
+  
     
-      
-    
-         
-    
-    
+  
        
+  
+  
+     
+  
     
-      
-    }
-      
-    .navbar ul li {
-      /* Display Inline-Block  - gør at  listen  står horizontal 
-          Margin 0 20 px - gør at ord som ligger i teksten har mellemrum mellem hinanden så  de er ikke klistret sammen 
-          Position -relative hjælper   med at vise den blå linje når du  pejer på listen 
-        */
-      list-style:none;
-      display:inline-block;
-      margin:0  30px;
-      position: relative;
-      top: 47%;
-    font-size: 0.9,5em;
-  
   }
-  .navbar ul li a{
-      text-decoration: none;
-     color: rgb(0, 0, 0);
-      text-transform: uppercase;
-  
-  }
-  
-  .navbar ul li::after{  
-      /* Content - giver dig muligheden  til at lave den  orange linje 
-         Height- bestemmer hvor tyk skal den orange linje vær og linjen vises ikke hvis du ikke sætter height på den 
-         Width 0 - gør at det bliver ikke vist noget og når du peger på listen  listen kommer frem 
-         Position - gør det muligt  for linjen til at blive vist 
-         Left 0- gør at  linjen passer perfekt med teksten 
-         Bottom -10px -gør at linjen står lidt mere ned 
-  
-           
-       */
-      content: '';
-      height: 4px;
-      width: 0%;
-      background-color:#d39000;
-      
-      position: absolute;
-      left: 0;
-      bottom:-10px;
-      transition:0.5s;
-  }
-  .navbar ul li:hover:after{  
-      
-      /* hover er, hvad der sker  når musen på en skærm kommer til at ligge på et element på websiden, 
-       fx i mit program når jeg liggerm mussen på hjem listen så kommer der en linje frem
-       Width på hover sak lvær 100% så linjen kan  blive vist 
+    
+  .navbar ul li {
+    /* Display Inline-Block  - gør at  listen  står horizontal 
+        Margin 0 20 px - gør at ord som ligger i teksten har mellemrum mellem hinanden så  de er ikke klistret sammen 
+        Position -relative hjælper   med at vise den blå linje når du  pejer på listen 
       */
-      width:100%;
+    list-style:none;
+    display:inline-block;
+    margin:0  30px;
+    position: relative;
+    top: 47%;
+  font-size: 0.9,5em;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+   color: rgb(0, 0, 0);
+    text-transform: uppercase;
+
+}
+
+.navbar ul li::after{  
+    /* Content - giver dig muligheden  til at lave den  orange linje 
+       Height- bestemmer hvor tyk skal den orange linje vær og linjen vises ikke hvis du ikke sætter height på den 
+       Width 0 - gør at det bliver ikke vist noget og når du peger på listen  listen kommer frem 
+       Position - gør det muligt  for linjen til at blive vist 
+       Left 0- gør at  linjen passer perfekt med teksten 
+       Bottom -10px -gør at linjen står lidt mere ned 
+
+         
+     */
+    content: '';
+    height: 4px;
+    width: 0%;
+    background-color:#d39000;
+    
+    position: absolute;
+    left: 0;
+    bottom:-10px;
+    transition:0.5s;
+}
+.navbar ul li:hover:after{  
+    
+    /* hover er, hvad der sker  når musen på en skærm kommer til at ligge på et element på websiden, 
+     fx i mit program når jeg liggerm mussen på hjem listen så kommer der en linje frem
+     Width på hover sak lvær 100% så linjen kan  blive vist 
+    */
+    width:100%;
+ }
+
+  
+  /*     Wrapper  */
+
+.wrapper{
+  display: inline-flex;
+  list-style: none;
+
+  position: relative;
+
+
+ 
+  width: 20%;
+  height: 70px;
+  border-radius: 2px;
+  color: black;
+  margin-top: -15%;
+  margin-left: 57%;
+
+     position: absolute;
+}
+.wrapper .icon{
+   position: relative;
+   background:transparent;
+   border-radius: 226px;
+   padding: 4.6%;
+   margin: -10% 2%;
+   margin-left:12% ;
+   width: 5px;
+   height: 10px;
+   font-size: 18px;
+   display: flex;
+  color: black;
+   align-items: center;
+   flex-direction: column;
+   background: transparent;
+   backdrop-filter: blur(20px);
+   cursor: pointer;
+   box-shadow: 10px 10px 0px rgba(0,0,0,0.1);
+   transition: all 0.2s cubic-bezier(0.68,-0.55,0.265,1.55);
+
+
+}
+.wrapper .tooltip{
+  position: absolute;
+  top: 0;
+  font-size: 4px;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.wrapper span{
+ margin-left: 22%;
+ margin:-22% 22%;
+}
+.wrapper .tooltip::before{
+  position: absolute;
+  content: '';
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.wrapper .icon:hover .tooltip{
+  top:-45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip{
+  text-shadow: 0px -1px 0px rgba(0,0,0,0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before{
+  color: #ffffff;
+  background-color: #1877f2;
+
+}
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before{
+  color: #ffffff;
+  background-color: #1da1f2;
+
+}
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before{
+  color: #ffffff;
+  background-color: #c93c3c;
+
+}
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before{
+  color: #ffffff;
+  background-color: #333333;
+
+}
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before{
+  color: #ffffff;
+  background-color: #f10606;
+
+}
+
+.wrapper li::after {
+ content: '';
+ display: block;
+ border-bottom: 1px solid white;
+ position: absolute;
+ bottom: 0;
+ left: 39%;
+ width: 20%;
+}
+.wrapper li:hover::after {
+ border-bottom: none; /* Remove the line on hover */
+}
+
+.wrapper li:hover {
+ border: none; /* Remove any default li border on hover */
+}
+  
+
+  
+   .grid{
+       display: flex;
+       grid-template-columns:89% 50%  ;
+      margin:-1.8px 0px;
+       width:100% ;
+       height:100px ;
+       text-shadow: 0 0 1.5px;
+  
+      
+     
+   }
+   .grid button{
+  
+       background-color: rgba(255, 155, 6, 0.699);
+       margin: 1030px 130px;
+      height : 50px;
+     
+      left: 74%;
+  
    }
   
+   .grid1{
+      background-color: #000000c9;
+      box-sizing: border-box;
+      border-radius: 150px;
+      border-radius: 5px;
     
-    /*     Wrapper  */
-
-  .wrapper{
-    display: inline-flex;
-    list-style: none;
- 
-    position: relative;
- 
-  
+   }
+   .grid1 h1{
+       color: white;
+       font-weight:bold;
+       font-size: 1.9em;
+       margin:10px 10px;
    
-    width: 20%;
-    height: 70px;
-    border-radius: 2px;
-    color: black;
-    margin-top: -15%;
-    margin-left: 57%;
- 
-       position: absolute;
-  }
-  .wrapper .icon{
-     position: relative;
-     background:transparent;
-     border-radius: 226px;
-     padding: 5.6%;
-     margin: 0% 2%;
-     margin-left:12% ;
-     width: 5px;
-     height: 10px;
-     font-size: 18px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-direction: column;
-     background: transparent;
-     backdrop-filter: blur(20px);
-     cursor: pointer;
-     box-shadow: 10px 10px 0px rgba(0,0,0,0.1);
-     transition: all 0.2s cubic-bezier(0.68,-0.55,0.265,1.55);
+   }
   
- 
-  }
-  .wrapper .tooltip{
-    position: absolute;
-    top: 0;
-    font-size: 14px;
-    background-color: #ffffff;
-    color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);
-  }
-  .wrapper .tooltip::before{
-    position: absolute;
-    content: '';
-    height: 8px;
-    width: 8px;
-    background: #ffffff;
-    bottom: -3px;
-    left: 50%;
-    transform: translate(-50%) rotate(45deg);
-    transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);
-  }
-  .wrapper .icon:hover .tooltip{
-    top:-45px;
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-  }
-  .wrapper .icon:hover span,
-  .wrapper .icon:hover .tooltip{
-    text-shadow: 0px -1px 0px rgba(0,0,0,0.1);
-  }
   
-  .wrapper .facebook:hover,
-  .wrapper .facebook:hover .tooltip,
-  .wrapper .facebook:hover .tooltip::before{
-    color: #ffffff;
-    background-color: #1877f2;
-  
-  }
-  .wrapper .twitter:hover,
-  .wrapper .twitter:hover .tooltip,
-  .wrapper .twitter:hover .tooltip::before{
-    color: #ffffff;
-    background-color: #1da1f2;
-  
-  }
-  .wrapper .instagram:hover,
-  .wrapper .instagram:hover .tooltip,
-  .wrapper .instagram:hover .tooltip::before{
-    color: #ffffff;
-    background-color: #c93c3c;
-  
-  }
-  .wrapper .github:hover,
-  .wrapper .github:hover .tooltip,
-  .wrapper .github:hover .tooltip::before{
-    color: #ffffff;
-    background-color: #333333;
-  
-  }
-  .wrapper .youtube:hover,
-  .wrapper .youtube:hover .tooltip,
-  .wrapper .youtube:hover .tooltip::before{
-    color: #ffffff;
-    background-color: #f10606;
-  
-  }
-  
-  .wrapper li::after {
-   content: '';
-   display: block;
-   border-bottom: 1px solid white;
-   position: absolute;
-   bottom: 0;
-   left: 39%;
-   width: 20%;
- }
- .wrapper li:hover::after {
-   border-bottom: none; /* Remove the line on hover */
- }
- 
- .wrapper li:hover {
-   border: none; /* Remove any default li border on hover */
- }
-    
-  
-    
-     .grid{
-         display: flex;
-         grid-template-columns:89% 50%  ;
-        margin:-1.8px 0px;
-         width:100% ;
-         height:100px ;
-         text-shadow: 0 0 1.5px;
-    
-        
-       
-     }
-     .grid button{
-    
-         background-color: rgba(255, 155, 6, 0.699);
-         margin: 1030px 130px;
-        height : 50px;
-       
-        left: 74%;
-    
-     }
-    
-     .grid1{
-        background-color: #000000c9;
-        box-sizing: border-box;
-        border-radius: 150px;
-        border-radius: 5px;
-      
-     }
-     .grid1 h1{
-         color: white;
-         font-weight:bold;
-         font-size: 1.9em;
-         margin:10px 10px;
+   .intro{
+      width: 99%;
      
-     }
-    
-    
-     .intro{
-        width: 99%;
-       
-        margin:auto;
-       padding: 5px 0px;
-       display : flex;
-        text-align: center;
-        justify-content: space-between;
-     
-        background: transparent;
-    }
-    .Big{
-        width: 40%;
-        padding: 110px 5px;
-    
-    
-    }
-       .intro h2 {
-        font-size:34px;
-        margin-top:180px;
-        padding: 30px 0px;
-        text-align: center;
-       padding-left: 62%;
-        position: absolute;
-    
-    }
-    
-    
-    .intro p{
-        /* Margin- gør at der er mellemrum mellem paragrafen  titlen og button og Line-Height gør den sammen ting   */
-        margin-top: 320px;
-       padding-left: 50%;
-       text-align: center;
+      margin:auto;
+     padding: 5px 0px;
+     display : flex;
+      text-align: center;
+      justify-content: space-between;
+   
+      background: transparent;
+  }
+  .Big{
+      width: 40%;
+      padding: 110px 5px;
+  
+  
+  }
+     .intro h2 {
+      font-size:34px;
+      margin-top:180px;
+      padding: 30px 0px;
+      text-align: center;
+     padding-left: 62%;
       position: absolute;
-     z-index: -1;
-     transition: 1.3s;
-    
-     
-    }
-    .intro :hover{
-        transform: translateY(-15px);
-        transition:1.0s;
-    }
-    
-    
- .flexbox-container{
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    margin: 200px 110px;
- 
-    
-
+  
+  }
+  
+  
+  .intro p{
+      /* Margin- gør at der er mellemrum mellem paragrafen  titlen og button og Line-Height gør den sammen ting   */
+      margin-top: 320px;
+     padding-left: 50%;
+     text-align: center;
+    position: absolute;
+   z-index: -1;
+   transition: 1.3s;
+  
    
- }
-.flexbox-item{
- 
-  border:6px ;
-  background-position: center;
+  }
+  .intro :hover{
+      transform: translateY(-15px);
+      transition:1.0s;
+  }
+  
+  
+.flexbox-container{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 200px 110px;
+  margin-left:8.9% ;
 
-  background-size: cover;
+  
 
  
 }
+.flexbox-item{
+
+border:6px ;
+background-position: center;
+
+background-size: cover;
+
+
+}
 .flexbox-item :hover{
-    transform: translateY(-15px);
-    transition:1.0s;
+  transform: translateY(-15px);
+  transition:1.0s;
 
 }
 .flexbox-item1{
-    min-height:300px ;
-    width: 500px;
+  min-height:300px ;
+  width: 500px;
 
-    
+  
 }
 .flexbox-item1 p{
- display: block;
- margin-block-start: 0.2em;
- margin-block-end: 0.2em;
- margin-inline-start: 1px;
- margin-inline-end: 1px;
- font-family: Arial, Helvetica, sans-serif;
- font-weight: normal;
- font-size:1.1em;
+display: block;
+margin-block-start: 0.2em;
+margin-block-end: 0.2em;
+margin-inline-start: 1px;
+margin-inline-end: 1px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: normal;
+font-size:1.1em;
 }
 
 .flexbox-item2{
-    min-height:300px ;
-    width: 500px;
-    
+  min-height:300px ;
+  width: 500px;
+  
 }
 .flexbox-item2 p{
-    display:block;
-    margin-block-start: 0.2em;
-    margin-block-end: 0.2em;
-    margin-inline-start:1px;
-    margin-inline-end:1px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: normal;
-    font-size:1.1em;
+  display:block;
+  margin-block-start: 0.2em;
+  margin-block-end: 0.2em;
+  margin-inline-start:1px;
+  margin-inline-end:1px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size:1.1em;
 }
 .flexbox-item3{
-    min-height:300px ;
-    width: 500px;
-    
+  min-height:300px ;
+  width: 500px;
+  
 }
 .flexbox-item3 p{
-    display:block;
-    margin-block-start: 0.2em;
-    margin-block-end: 0.2em;
-    margin-inline-start:1px;
-    margin-inline-end:1px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: normal;
-    font-size:1.1em;
+  display:block;
+  margin-block-start: 0.2em;
+  margin-block-end: 0.2em;
+  margin-inline-start:1px;
+  margin-inline-end:1px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size:1.1em;
 }
 
-      .content{
-        width: 100%;
-        height: 120%;
-        position: absolute;
-        top:465%;
-       transform:translateY(-50%);
-        text-align: center;
-        color:rgb(255, 255, 255);
-        background-size: cover ;
-        background-image:url('/assets/Wallpaper1.jpg')
-    
-    }
-    
-    .content h1 {
-        font-size:40px;
-        margin-top:480px;
-        text-shadow: 0 0 3px;
-    }
-
-
-    .content p{
-        /* Margin- gør at der er mellemrum mellem paragrafen  titlen og button og Line-Height gør den sammen ting   */
-        margin:13px  auto ;
-        font-weight: 100px;
-        line-height: 25px;
-    }
-    
-    
-    button{
-    /* Width - Gør knapperen mere langt
-        Padding- gør at knappenere er mere tyk
-          Margin:20px 10px; - gør at der er mellemrum mellem de to knapper 
-            Border-radius: 25px; - Gør at knapperne  har ikke en firekant form 
-            Border:2px solid #009688 - Gør at der er en blå farve rundt i  knapperne  er ikke inden i  
-               Background: transparent -Gør at knaperene  har den sammen backround som selv background  billeden  
-                Position:Relative; Gør at den blå farve kommer ikke i hele hjemmesdien men kun   ind i knappen
-                overflow:hidden; gør at farven som vises efter du peger på knappen står ind i knappen og ikke ud
-                  */
-
-    width:190px;
-    padding:15px 0;
-    text-align: center;
-    margin:10px 10px;
-    border-radius: 25px;     
-    font-weight: bold;
-    border: solid #ffffff ;
-    background:transparent;
-    color:rgb(255, 255, 255);
-    cursor:pointer;
-    text-shadow: 0 0 2px;
-    font-weight:bold;
-    position:relative;
-    overflow: hidden;
-    
-
- }
-
-
-
+    .content{
+      width: 100%;
+      height: 120%;
+      position: absolute;
+      top:645%;
+     transform:translateY(-50%);
+      text-align: center;
+      color:rgb(255, 255, 255);
+      background-size: cover ;
+      background-image:url('/assets/Wallpaper1.jpg');
+      margin-left: -0.8%;
   
-span{
-    /* Height: 100%; - gør at hele  farven kommer på knappen 
-     Width-gør at det bliver ikke vist noget  farve på knappen før du peger på den 
-    Position:Absolute; - Hjælper dig med at vise den blå background på knappen 
-     Left 0- gør at  baggrunden  passer perfekt med  knapperne 
-    Bottom 0 -gør baggrunden  passer perfekt med  knapperne 
-    z-index: -1; - Gør det muligt at teksten bliver vist selvom der kommer  baggrund farve på knappen 
+  }
+  
+  .content h1 {
+      font-size:40px;
+      margin-top:480px;
+      text-shadow: 0 0 3px;
+  }
 
-         */
-    background:rgb(1, 199, 189);
-    height: 100%;
-    width: 0%;   
-    border-radius: 25px;
-    position:absolute;
-    left:0;
-    bottom: 0;
-    z-index: -1;
-    transition:0.5s;
+
+  .content p{
+      /* Margin- gør at der er mellemrum mellem paragrafen  titlen og button og Line-Height gør den sammen ting   */
+      margin:13px  auto ;
+      font-weight: 100px;
+      line-height: 25px;
+  }
+  
+  
+  button{
+  /* Width - Gør knapperen mere langt
+      Padding- gør at knappenere er mere tyk
+        Margin:20px 10px; - gør at der er mellemrum mellem de to knapper 
+          Border-radius: 25px; - Gør at knapperne  har ikke en firekant form 
+          Border:2px solid #009688 - Gør at der er en blå farve rundt i  knapperne  er ikke inden i  
+             Background: transparent -Gør at knaperene  har den sammen backround som selv background  billeden  
+              Position:Relative; Gør at den blå farve kommer ikke i hele hjemmesdien men kun   ind i knappen
+              overflow:hidden; gør at farven som vises efter du peger på knappen står ind i knappen og ikke ud
+                */
+
+  width:190px;
+  padding:15px 0;
+  text-align: center;
+  margin:10px 10px;
+  border-radius: 25px;     
+  font-weight: bold;
+  border: solid #ffffff ;
+  background:transparent;
+  color:rgb(255, 255, 255);
+  cursor:pointer;
+  text-shadow: 0 0 2px;
+  font-weight:bold;
+  position:relative;
+  overflow: hidden;
+  
+
+}
+
+
+
+
+span{
+  /* Height: 100%; - gør at hele  farven kommer på knappen 
+   Width-gør at det bliver ikke vist noget  farve på knappen før du peger på den 
+  Position:Absolute; - Hjælper dig med at vise den blå background på knappen 
+   Left 0- gør at  baggrunden  passer perfekt med  knapperne 
+  Bottom 0 -gør baggrunden  passer perfekt med  knapperne 
+  z-index: -1; - Gør det muligt at teksten bliver vist selvom der kommer  baggrund farve på knappen 
+
+       */
+  background:rgb(1, 199, 189);
+  height: 100%;
+  width: 0%;   
+  border-radius: 25px;
+  position:absolute;
+  left:0;
+  bottom: 0;
+  z-index: -1;
+  transition:0.5s;
 
 
 
 }
 
 button:hover span{
-    width:100%;
-    /* hover er, hvad der sker  når musen på en skærm kommer til at ligge på et element på websiden, 
-     fx i mit program når jeg liggerm mussen på hjem listen så kommer der en linje frem
-     Width på hover sak lvær 100% så linjen kan  blive vist 
-    */
+  width:100%;
+  /* hover er, hvad der sker  når musen på en skærm kommer til at ligge på et element på websiden, 
+   fx i mit program når jeg liggerm mussen på hjem listen så kommer der en linje frem
+   Width på hover sak lvær 100% så linjen kan  blive vist 
+  */
 
 }
 .kontakt{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin: 1143px 0px;
-    text-shadow: 0 0 0.5px;
-    background-color: rgb(255, 254, 254);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 1143px 0px;
+  margin-left: 140px;
+  text-shadow: 0 0 0.5px;
+  background-color: rgb(255, 254, 254);
+
+
   
+}
+
+
+
+.kontakt-item1{
+
+    width: 500px;
+    margin:0px 100px;
+          
+  width: 90%;
+ 
+  margin:auto;
+ padding: 25px 0;
+ display : flex;
+  text-align: center;
+  justify-content: space-between;
+  font-weight:bold;
+  background: transparent;
+
 
     
 }
+.kontakt-item1 Logo{
+  width: 100px;
+  top: 0%;
+  
+
+
+}
+.kontakt-item1 ul  li{
+
+ margin-block-start: 0.5em;
+ margin-block-end: 0.4em;
+ margin-inline-start: 1px;
+ margin-inline-end: 1px;
+ justify-content: space-between;
+ font-family: Arial, Helvetica, sans-serif;
+ font-weight: normal;
+ font-size:0.8em;
+
+ color:rgb(28, 110, 235);
+   /* Display Inline-Block  - gør at  listen  står horizontal 
+      Margin 0 20 px - gør at ord som ligger i teksten har mellemrum mellem hinanden så  de er ikke klistret sammen 
+      Position -relative hjælper   med at vise den blå linje når du  pejer på listen 
+    */
+    list-style:none;
+    display:inline-block;
+    margin:0  40px;
+    position: relative;
+    top: 47%;
+
+
+}
+
+
+.product-wrapper {
+  width: 525px;
+   /* Adjust this value to move it to the left */
+   margin-left:-40% ;
+   margin: 20% 62%;
+   margin-top: 10%;
+
+
+}
+.product-wrapper h1 {
+
+   /* Adjust this value to move it to the left */
+   text-align: center;
+   margin-left:-165%  ;
+
+
+
+}
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-gap: 70px;
+ /* Enable horizontal scrolling if necessary */
+  margin-left: -180%;
+  margin-bottom: 20px;
 
   
+}
+
+.product-item {
+  width: 100%; /* Adjust as needed */
+  margin-right: -20%; /* Adjust spacing between products */
+
+  box-shadow:  18px 16px 27px rgba(0, 0, 0, 0.144);
+  transition: transform 0.3s ease;
   
-  .kontakt-item1{
+}
+.product-item:hover {
+  transform: scale(1.05); /* Enlarge the product on hover */
+
+}
+
+.product-item img{
+  width: 100%;
+height: 265px;
+object-fit: contain;
+}
+
+.product-item .product-details{
+
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  padding: 15px;
+}
+
+.product-item .name-head{
+
+  font-size: 20px;
+  font-weight: 600;
+}
+.product-item h6{
+  text-align: center;
+}
+.product-item .product-footer{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+.product-footer button{
+  cursor: pointer;
+  
+  border: none;
+
+  box-shadow: 2px 2px 7px rgb(110, 108, 108);
  
-      width: 500px;
-      margin:0px 100px;
-            
-    width: 90%;
-   
-    margin:auto;
-   padding: 25px 0;
-   display : flex;
-    text-align: center;
-    justify-content: space-between;
-    font-weight:bold;
-    background: transparent;
 
+  background:#1A1B27;
+  color: rgba(255, 255, 255, 0.8);
+
+ padding: 3px  15px;
+ border-radius: 3px;
+
+
+  transition: all 1s;
+
+}
+.product-footer button:hover{
+  cursor: pointer;
   
-      
-  }
-  .kontakt-item1 Logo{
-    width: 100px;
-    top: 0%;
-    
- 
+  border: none;
 
-  }
-  .kontakt-item1 ul  li{
-
-   margin-block-start: 0.5em;
-   margin-block-end: 0.4em;
-   margin-inline-start: 1px;
-   margin-inline-end: 1px;
-   justify-content: space-between;
-   font-family: Arial, Helvetica, sans-serif;
-   font-weight: normal;
-   font-size:0.8em;
- 
-   color:rgb(28, 110, 235);
-     /* Display Inline-Block  - gør at  listen  står horizontal 
-        Margin 0 20 px - gør at ord som ligger i teksten har mellemrum mellem hinanden så  de er ikke klistret sammen 
-        Position -relative hjælper   med at vise den blå linje når du  pejer på listen 
-      */
-      list-style:none;
-      display:inline-block;
-      margin:0  40px;
-      position: relative;
-      top: 47%;
+padding: 1px;
 
 
-  }
-  
+background: #494949;
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
 
+
+
+
+
+}
+
+
+.line{
+  box-shadow: 0 0 10px rgba(0, 0, 0.5);
+}

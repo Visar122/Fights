@@ -12,11 +12,15 @@ export class FighterdetailsComponent implements OnInit {
   constructor(private route: ActivatedRoute, private fighterService: FigherService) {}
 
   ngOnInit(): void {
-    this.getFighterDetails(this.fighter); // Replace 1 with the desired fighter ID
+  
+    this.route.params.subscribe(params => {
+      const fighterId = params['id'];
+      this.getFighterDetails(fighterId);
+    });
   }
 
   getFighterDetails(id: string) {
-    this.fighterService.getFighterById(id)
+    this.fighterService.GetFightersbyId(id)
       .subscribe((data) => {
         this.fighter = data;
       });

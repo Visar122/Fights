@@ -4,24 +4,27 @@
     <input type="text" [(ngModel)]="searchTerm" (input)="searchFighter()" placeholder="Search Fighter" class="search-input">
   </div>
   <ul>
-    <li style="color: white;"> <a href="#Home"> Home </a> </li>
+    <li style="color: white;"> <a href="/Home"> Home </a> </li>
     <li> <a href="#page2"> Boxing Fights </a> </li>
     <li style="color:white"><a href="#Aboutus"> UFC </a> </li>
   </ul>
 </div>
 <hr>
 <div class="fighter-container" *ngIf="fighters.length > 0; else noFighters" >
-  <div *ngFor="let fighter of fighters" class="fighter-card" (click)="navigateToFighterDetails(fighter.id)"> <!-- Updated click event to pass fighter id -->
-    <div class="fighter-info">
-      <a [routerLink]="['/fighterdetails', fighter.id]">Hello</a>
+  <div *ngFor="let fighter of fighters" class="fighter-card"> <!-- Updated click event to pass fighter id -->
+    <div class="fighter-info"(click)="navigateToFighterDetails(fighter.id)">
+      <a [routerLink]="['/fighterdetails', fighter.id]" style="color: inherit;text-decoration:none;">
       <h3>{{ fighter.name }}</h3>
       <p>Record: {{ fighter.record }}</p>
       <p>Weight Class: {{ fighter.weight_class }}</p>
       <p>Status: <span class="status" [ngClass]="{'active': fighter.status === 'Active', 'retired': fighter.status === 'Retired', 'upcoming': fighter.upcoming_event}">{{ fighter.status }}</span></p>
       <p *ngIf="fighter.upcoming_event">Upcoming Event: <span class="upcoming-event">{{ fighter.upcoming_event }}</span></p>
+    </a>
     </div>
-    <div class="fighter-image">
-      <img [src]="fighter.photo" alt="{{ fighter.name }}" >
+    <div class="fighter-image" (click)="navigateToFighterDetails(fighter.id)">
+      <a [routerLink]="['/fighterdetails', fighter.id]">
+        <img [src]="fighter.photo" alt="{{ fighter.name }}">
+      </a>
     </div>
   </div>
 </div>

@@ -1,0 +1,92 @@
+.event-details {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.event-poster {
+  max-width: 450px;
+  height: auto;
+  margin: 20px auto;
+  box-shadow:10px 10px 14px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.event-poster:hover {
+  transform: scale(1.05);
+}
+
+.main-event {
+  margin-top: 40px;
+  border-collapse: collapse;
+  box-shadow:10px 10px 14px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.main-event:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* More intense shadow on hover */
+}
+
+.event-section-title {
+  padding: 10px;
+  margin: 0;
+  font-size: 28px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Paper-like shadow */
+}
+
+.event-section-title:hover {
+  transform: scale(1.05);
+}
+
+.main-event-title {
+  background: linear-gradient(135deg, #000000, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.main-event-fighters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fighter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.fighter-photo {
+  max-width:100%;
+  height: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.fighter-photo:hover {
+  transform: scale(1.05);
+}
+
+.vs {
+  font-size: 28px;
+  padding: 20px;
+  color: #ff5733;
+}
+
+.bout {
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+
+.bout {
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 20px;
+}
+

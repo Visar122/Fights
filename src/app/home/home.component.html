@@ -1,29 +1,21 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Document</title>
-</head>
-<body>
 
 <div class="navbar"> 
     <img class="Logo" src="../assets/logo.jpg"> 
     <ul>
         <li style="color: white;"> <a href="#Home"> Home </a> </li>
-        <li> <a href="#page2"> Boxing Fights </a> </li>
-        <li style="color:white"><a href="#Aboutus"> UFC </a> </li>
-        <li style="color:white">
-            <a href="#" (click)="toggleSearch()">
-                <i class="fa-solid fa-magnifying-glass" style="color: black;"></i>
-            </a>
-            <input type="text" [(ngModel)]="searchTerm" (input)="searchFighter()" placeholder="Search Fighter" [hidden]="!showSearch">
-        </li>
+        <li style="color:white"><a routerLink="/fighters">Fighters </a></li>
+        <li>  <a routerLink="/boxingevent">  Boxing Fights </a> </li>
+        <li style="color:white"><a routerLink="/ufcEvent"> UFC </a> </li>
+     
+    
+          
+    
     </ul>
 </div>
 
 <hr>
-<img src="../assets/ali.jpg" style="margin-left: 0%;">
+<img src="../assets/ali.jpg" style="margin-left: 0%;width: 100%;">
 
 <div class="grid" id="page2">
     <div class="grid grid2"> </div>
@@ -76,7 +68,45 @@ Igen tak for din interesse Mvh Visar.
 
 <hr>
 
-<li><a routerLink="/fighters">Fighter Records</a></li>
+
+<div class="product-wrapper"> 
+    <h1>Popular Events</h1>
+    <br><br>
+    <div class="row" >  <!-- Bootstrap row  -->
+        <div class="col-sm-25" *ngFor="let item of popularfights"> <!-- it takes 25 precent of the screen -->
+           <div class="product-item" >
+          <a routerLink="/eventdetails/{{item.id}}"><img [src]="item.poster" alt=""></a>  
+          
+       
+             <div class="product-details">
+              <h6 class="name-head">{{item.event}}</h6>
+             
+              <div class="product-color">
+                <h6>Date: {{item.date}}</h6>
+              </div>
+              <br>
+  
+            
+              <div class="product-status">
+                <!-- Left side -->
+                <div class="Status">
+                    <p>{{item.eventtype }}</p>
+                </div>
+            
+              
+            </div>
+             </div>
+             
+             <div class="product-footer">
+              <a routerLink="/eventdetails/{{item.id}}">  <button>View Details</button></a>
+     
+             </div>
+  
+           </div>
+        </div>
+    </div>
+  </div>
+
 
 <div class="flexbox-container" id="Side">
     <div class="flexbox-item flexbox-item1">
@@ -114,5 +144,4 @@ Igen tak for din interesse Mvh Visar.
     </div>
 </div>
 
-</body>
-</html>
+

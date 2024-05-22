@@ -21,7 +21,7 @@
         
       },
       {
-        "id": 4,
+        "id":3,
         "name": "Gervonta Davis",
         "record": "29-0-0",
         "weight_class": "Lightweight",
@@ -31,7 +31,7 @@
          "Popularity":"Popular"
       },
       {
-        "id": 5,
+        "id": 4,
         "name": "Floyd Mayweather Jr.",
         "record": "50-0-0",
         "weight_class": "Welterweight",
@@ -40,7 +40,7 @@
            "Popularity":""
       },
       {
-        "id": 6,
+        "id": 5,
         "name": "Manny Pacquiao",
         "record": "62-7-2",
         "weight_class": "Welterweight",
@@ -50,7 +50,7 @@
         "Popularity":"" 
       },
       {
-        "id": 7,
+        "id": 6,
         "name": "Canelo Alvarez",
         "record": "61-2-2",
         "weight_class": "Middleweight",
@@ -61,7 +61,7 @@
       },
     
       {
-        "id": 8,
+        "id": 7,
         "name": "Mike Tyson",
         "record": "50-6-0",
         "weight_class": "Heavyweight",
@@ -70,7 +70,7 @@
         "Popularity":""
       },
       {
-        "id": 9,
+        "id": 8,
         "name": "Jaron Ennis",
         "record": "31-0-0",
         "weight_class": "Welterweight",
@@ -80,7 +80,7 @@
         "Popularity":"Popular"
       },
       {
-        "id": 10,
+        "id": 9,
         "name": "Frank Martin",
         "record": "18-0-0",
         "weight_class": "Lightweight",
@@ -90,7 +90,7 @@
         "Popularity":"Popular"
       }
     ,
-      { "id": 11,
+      { "id": 10,
         "name": "Alex Pereira",
         "record": "10-2-0",
         "weight_class": "Middleweight",
@@ -99,7 +99,7 @@
         "photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/inline/s3/2023-03/GettyImages-1441106802.jpg?itok=tCT922ax",
         "Popularity":"Popular"
       },
-      { "id": 12,
+      { "id": 11,
         "name": "Israel Adesanya",
         "record": "24-3-0",
         "weight_class": "Middleweight",
@@ -107,7 +107,7 @@
         "photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2023-09/ADESANYA_ISRAEL_L_04-08.png?itok=FOMzxCwD",
         "Popularity":"Popular"
      },
-      { "id": 13,
+      { "id": 12,
         "name": "Conor McGregor",
         "record": "22-5-0",
         "weight_class": "Lightweight",
@@ -116,7 +116,7 @@
         "photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-07/MCGREGOR_CONOR_L_07-10.png?itok=xbg9Kwfj",
         "Popularity":"Popular"
       },
-      { "id": 14,
+      { "id": 13,
         "name": "Khabib Nurmagomedov",
         "record": "29-0-0",
         "weight_class": "Lightweight",
@@ -124,7 +124,7 @@
         "photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/image/fighter_images/Khabib_Nurmagomedov/1NURMAGOMEDOV_KHABIB_L.png?itok=MDKzcpwv",
          "Popularity":""
       },
-      { "id": 15,
+      { "id": 14,
         "name": "Jon Jones",
         "record": "27-1-0",
         "weight_class": "Light Heavyweight",
@@ -134,23 +134,277 @@
         "Popularity":"Popular"
       },
 
-      { "id": 16,
+      { "id": 15,
         "name": "Islam  Makachev",
         "record": "25-1-0",
-        "weight_class": "Light Heavyweight",
+        "weight_class": "Lightweight",
         "status": "Active",
         "upcoming_event": "UFC 302 June 2",
         "photo": "https://gidstats.com/img/fighters/0/0/2-323.png",
         "Popularity":"Popular"
-      }
+      },
+      { "id": 16,
+      "name": "Dustin  Porier",
+      "record": "30-8-0",
+      "weight_class": "Lightweight",
+      "status": "Active",
+      "upcoming_event": "UFC 302 June 2",
+      "photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2024-03/POIRIER_DUSTIN_L_03-09.png?itok=DXIlLXrO",
+      "Popularity":"Popular"
+    },
+    { "id": 17,
+    "name": "Khamzat Chimaev",
+    "record": "13-0-0",
+    "weight_class": "Middleweight",
+    "status": "Active",
+    "upcoming_event": "UFC Fight Night June 22",
+    "photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-11/71660%252Fprofile-galery%252Ffullbodyleft-picture%252FCHIMAEV_KHAMZAT_L_10-30.png?itok=V9OsChbC",
+    "Popularity":"Popular"
+  },
+  { "id": 18,
+  "name": "Robert Whittaker",
+  "record": "26-7-0",
+  "weight_class": "Middleweight",
+  "status": "Active",
+  "upcoming_event": "UFC Fight Night June 22",
+  "photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2024-02/WHITTAKER_ROBERT_L_02-17.png?itok=hFnYTC3t",
+  "Popularity":"Normal"
+},
+{ "id": 19,
+"name": "Tyson Fury",
+"record": "34-0-1",
+"weight_class": "Heavyweight",
+"status": "Active",
+"upcoming_event": "Fury vs Usyk May 18",
+"photo": "data:image/jpeg;base64,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",
+"Popularity":"Popular"
+},
+{ "id": 20,
+"name": "Oleksandr  Usyk",
+"record": "21-0-0",
+"weight_class": "Heavyweight",
+"status": "Active",
+"upcoming_event": "Fury vs Usyk May 18",
+"photo": "https://image.discovery.indazn.com/ca/v2/ca/image?id=5bedbf94-40a3-4a9b-b9f1-ec49b1ff9fc4&quality=70",
+"Popularity":"Normal"
+},
+{ "id": 21,
+"name": "Deontay Wilder",
+"record": "43-3-1",
+"weight_class": "Heavyweight",
+"status": "Active",
+"upcoming_event": "Wilder vs Zhang June 1",
+"photo": "https://www.premierboxingchampions.com/sites/default/files/BioImage_Wilder.jpg",
+"Popularity":"Normal"
+},
+{ "id": 22,
+"name": "Terence Crawford",
+"record": "40-0-0",
+"weight_class": "Welterweight",
+"status": "Active",
+"upcoming_event": "Crawford vs Madrimov  August 3",
+"photo": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b16ca7fe-c2c5-4348-8869-6cf9382bb7b6/dffzfi4-5fc28b74-09bb-4b9b-b684-878f013a1102.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2IxNmNhN2ZlLWMyYzUtNDM0OC04ODY5LTZjZjkzODJiYjdiNlwvZGZmemZpNC01ZmMyOGI3NC0wOWJiLTRiOWItYjY4NC04NzhmMDEzYTExMDIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.tJL07xcIM7HPRNCXNmjevt_qWokj7LoOg-W8Kg5D32Q",
+"Popularity":"Popular"
+}
     
  
     ],
     "upcoming_events": [
       {
-        "event": "UFC 303",
-        "date": "2024-30-06",
+       
+        "event": " Fury vs Usyk",
+        "date": "May  18  ",
         "location": "Las Vegas, NV",
+        "eventtype":"Boxing",
+        "poster":"https://d31fr2pwly4c4s.cloudfront.net/b/f/8/1693012_1952d982_fury-v-usyk-fanzone_eflyer.jpg",
+        "bout":"Heavyweight Championship Bout",
+        "main_event": {
+          "fighters": [
+            {
+              "name": "Tyson Fury",
+              "photo": "data:image/jpeg;base64,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"
+
+            },
+            {
+              "name": "Oleksandr  Usyk",
+              "photo": "https://image.discovery.indazn.com/ca/v2/ca/image?id=5bedbf94-40a3-4a9b-b9f1-ec49b1ff9fc4&quality=70"
+            }
+          ]
+        },
+        "co_main_event": {
+          "bout":"",
+          "fighters": [
+            
+            {
+              "name": "Jai  Opetaia ",
+              "photo": "https://images.ctfassets.net/vhp9jnid12wf/2TJ4gQEkUKVttOKJauRdcW/9dc7db38d57e3bfcc3cb4c1565ca26f8/MicrosoftTeams-image__7_.png"
+
+            },
+            {
+              "name": " Mairis Briedis",
+              "photo": "https://i.pinimg.com/originals/dc/e2/a1/dce2a15f121dd4a74ed8aba41e080c2d.png"
+
+            }
+            
+          ]
+        }
+        
+      },
+      
+      {
+       
+        "event": " Wilder vs Zhang",
+        "date": "June 1 ",
+        "location": "Las Vegas, NV",
+        "eventtype":"Boxing",
+        "poster":"https://i.ytimg.com/vi/3OeIjvOpJ8Y/maxresdefault.jpg",
+        "bout":"Heavyweight Top 5 Bout",
+        "main_event": {
+          "fighters": [
+            {
+              "name": "Deontay Wilder",
+              "photo": "https://www.premierboxingchampions.com/sites/default/files/BioImage_Wilder.jpg"
+            },
+            {
+              "name": "Zhang",
+              "photo": "https://queensberry.co.uk/wp-content/uploads/2023/02/Zhilei-Zhang-1.png"
+            }
+          ]
+        },
+        "co_main_event": {
+          "bout":"Heavyweight Top 5 Bout",
+          "fighters": [
+            
+            {
+              "name": "Daniel Dubois ",
+              "photo": "https://images.ctfassets.net/vhp9jnid12wf/aMmv1nDHqJwa7HNJvEhSE/4b39bb96b4707a17a198647fb4db359f/MicrosoftTeams-image__11_.png"
+            },
+            {
+              "name": "Filip Hrgovic",
+              "photo": "https://www.paffen-sport.com/media/e4/15/5c/1700141773/filip-hrgovic-01.webp"
+            }
+            
+          ]
+        }
+        
+      },
+ 
+      {
+       
+        "event": "UFC 302",
+        "date": "June 2 ",
+        "location": "Las Vegas, NV",
+        "eventtype":"Ufc",
+        "poster":"https://preview.redd.it/ufc-302-poster-v0-p5ccr3wz41yc1.jpeg?width=640&crop=smart&auto=webp&s=5cfac2c1886d4d69fd3ad6ff6a7d9a10b5502443",
+        "bout":"Ligtweight Ufc Championship Bout ",
+        "main_event": {
+          "fighters": [
+            {
+              "name": "Islam  Makachev",
+              "photo": "https://gidstats.com/img/fighters/0/0/2-323.png"
+            },
+            {
+              "name": "Dustin  Porier",
+              "photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2024-03/POIRIER_DUSTIN_L_03-09.png?itok=DXIlLXrO"
+            }
+          ]
+        },
+        "co_main_event": {
+          "bout":"Top 5  Middelweight Contender Bout ",
+          "fighters": [
+            {
+              "name": "Sean  Strickland",
+              "photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2023-06/STRICKLAND_SEAN_L_07-01.png?itok=Xa9H8rts"
+            },
+            {
+              "name": " Paulo Costa",
+              "photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2024-02/COSTA_PAULO_L_02-17.png?itok=FPNZt5Pb"
+            }
+          ]
+        }
+        
+      },
+     
+         
+      {
+       
+        "event": "Gerovnta Davis vs Frank Martin",
+        "date": "June 12 ",
+        "location": "New York, NY",
+        "poster":"https://e00-marca.uecdn.es/assets/multimedia/imagenes/2024/04/21/17136618568398.jpg",
+        "eventtype":"Boxing",
+        "bout":"Featherweight and Lightweight Championship Bout ",
+        "main_event": {
+          "fighters": [
+            {
+              "name": "Gervonta Davis",
+              "photo": "https://i.pinimg.com/originals/0e/1f/9f/0e1f9f360378a76b3d228fa4b0eb2f1b.jpg"
+            },
+            {
+              "name": "Frank Martin",
+              "photo": "https://b.fssta.com/uploads/application/boxing/headshots/2227.png"
+            }
+          ]
+        },
+        "co_main_event": {
+          "bout":"Middelweightr Championship Bout ",
+          "fighters": [
+            {
+              "name": "Benavidez",
+              "photo": "https://www.premierboxingchampions.com/sites/default/files/BioImage_Benavidez_1.jpg"
+            },
+            {
+              "name": " Gvozdyk",
+              "photo": "https://www.premierboxingchampions.com/sites/default/files/BioImage_Gvozdyk.jpg"
+            }
+          ]
+        }
+      },
+      {
+       
+        "event": " Ufc Fight Night",
+        "date": "June 22 ",
+        "location": "New York, NY",
+        "poster":"https://pbs.twimg.com/media/GJv1EsBXkAIe_r3.jpg",
+        "eventtype":"Ufc",
+        "bout":"Middelweight Title Contender Fight ",
+        "main_event": {
+          "fighters": [
+            {
+              "name": "Khamzat Chimaev",
+              "photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-11/71660%252Fprofile-galery%252Ffullbodyleft-picture%252FCHIMAEV_KHAMZAT_L_10-30.png?itok=V9OsChbC"
+            },
+            {
+              "name": "Robert Whittaker",
+              "photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2024-02/WHITTAKER_ROBERT_L_02-17.png?itok=hFnYTC3t"
+            }
+          ]
+        },
+        "co_main_event": {
+          "bout":"Middelweight Title Contender Fight ",
+          "fighters": [
+            {
+              "name": "Sergei Pavlocich",
+              "photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2023-11/PAVLOVICH_SERGEI_L_11-11.png?itok=b_wm1tN_"
+            },
+            {
+              "name": " Alexander Volkov",
+              "photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2023-03/VOLKOV_ALEXANDER_L_03-11.png?itok=utZuJcnI"
+            }
+          ]
+        }
+      },
+      
+
+     
+      {
+       
+        "event": "UFC 303",
+        "date": "June 30 ",
+        "location": "Las Vegas, NV",
+        "poster":"https://www.proboxing.cz/wp-content/uploads/2022/12/3-31.jpg",
+        "eventtype":"Ufc",
+       "bout":"",
         "main_event": {
           "fighters": [
             {
@@ -162,25 +416,81 @@
               "photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-05/1dd9466e-5d52-4a1d-8af9-201e9af35e6a%252FCHANDLER_MICHAEL_L_05-07.png?itok=SGvqtEC7"
             }
           ]
+        },
+        "co_main_event": {
+          "bout":"",
+          "fighters": [
+            {
+              "name": "Jamahal Hill",
+              "photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-02/689f14e8-507c-4705-98b3-f8e80eee8cad%252FHILL_JAMAHAL_L_02-19.png?itok=VA63MkX8"
+            },
+            {
+              "name": " Kahlil Rountree jr.",
+              "photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/event_fight_card_upper_body_of_standing_athlete/s3/2023-12/ROUNTREE_KHALIL_R_12-09.png?itok=RT7V2U6q"
+            }
+          ]
         }
       },
+     
       {
-        "event": "Boxing Night",
-        "date": "2024-06-01",
-        "location": "New York, NY",
+       
+        "event": "Ennis vs Crowley",
+        "date": "July  3 ",
+        "location": "Las Vegas, NV",
+        "poster":"https://image.discovery.indazn.com/ca/v2/ca/image?id=htdih9nnr4u1poxfpn2q6q7r_image-header_pRow_1714683243000&quality=70",
+        "eventtype":"Boxing",
+        "bout":"",
         "main_event": {
           "fighters": [
             {
-              "name": "Floyd Mayweather Jr.",
-              "photo": "floyd_mayweather.jpg"
+              "name": "Ennis",
+              "photo": "https://box.live/wp-content/uploads/2018/11/Jaron_Ennis-180x135.png"
             },
             {
-              "name": "Manny Pacquiao",
-              "photo": "manny_pacquiao.jpg"
+              "name": "Crowley",
+              "photo": "https://box.live/wp-content/uploads/2021/12/Cody_Crowley-180x135.png.webp"
+            }
+          ]
+        }
+      },
+      {
+        
+        "event": "Crawford vs Madrimov",
+        "date": "August  3 ",
+        "location": "Las Vegas, NV",
+        "poster":"https://pbs.twimg.com/media/GL9Av_qbMAARrHJ?format=jpg&name=900x900",
+        "eventtype":"Boxing",
+        "bout":" Welterweight Championship Fight  ",
+        "main_event": {
+          "fighters": [
+            {
+              "name": "Terence Crawford",
+              "photo": "https://images.ctfassets.net/vhp9jnid12wf/6UysVVSdA9c0ca4DcsMPwA/ebea7dc5ae8084f3be3aca5c4b61c913/MicrosoftTeams-image__13_.png"
+            },
+            {
+              "name": "Madrimov",
+              "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYrKQ-Ijj731WYQ25vVxsmcTkruZYLl5mIzSERdrAD_Q&s"
+            }
+          ]
+        },
+       
+       
+        "co_main_event": {
+          "bout":" Heavyweight Top 5 Contender Fight  ",
+          "fighters": [
+            {
+              "name": "Andy Ruiz",
+              "photo": "https://b.fssta.com/uploads/application/boxing/headshots/1331.vresize.350.350.medium.29.png"
+            },
+            {
+              "name": " Jarell Miller",
+              "photo": "https://www.15rounds.com/wp-content/uploads/2015/06/Jarrell-Miller.png"
             }
           ]
         }
       }
+    
+   
     ]
   }
   

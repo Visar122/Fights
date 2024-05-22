@@ -10,8 +10,8 @@ export class FigherService {
 
   constructor(private http: HttpClient) { }
 
-  getFighters(category: string): Observable<any[]> {
-    return this.http.get<any[]>(`${this.apiUrl}/${category}`);
+  FighterList() {
+    return this.http.get<any[]>(`${this.apiUrl}/fighters`);
   }
 
   searchFighter(searchTerm: string): Observable<any[]> {
@@ -20,9 +20,30 @@ export class FigherService {
     return this.http.get<any[]>(`${this.apiUrl}/search?term=${searchTerm}`);
   }
 
-  getFighterById(id: string): Observable<any> {
+ 
+  GetFightersbyId(id:string) {
     return this.http.get<any>(`${this.apiUrl}/fighters/${id}`);
   }
   
+  PopularFights(){
+    return this.http.get<any[]>('http://localhost:3000/upcoming_events?_limit=10');
+   }
+   
+   getEventById(eventid:string) {
+    return this.http.get<any>(`${this.apiUrl}/upcoming_events/${eventid}`);
+  }
+  getevents() {
+    return this.http.get<any[]>(`${this.apiUrl}/upcoming_events`);
+  }
+
+  getBoxingEvents(): Observable<any[]> {
+    // Assuming you have an endpoint that filters boxing events
+    return this.http.get<any[]>(`${this.apiUrl}/upcoming_events?eventtype=Boxing`);
+  }
+
+  getUfcEvents(): Observable<any[]> {
+    // Assuming you have an endpoint that filters boxing events
+    return this.http.get<any[]>(`${this.apiUrl}/upcoming_events?eventtype=Ufc`);
+  }
   
 }

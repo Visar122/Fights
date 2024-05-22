@@ -15,14 +15,13 @@ export class FighterRecordsComponentComponent {
   constructor(private fighterService:FigherService,private route:Router) { }
 
   ngOnInit(): void {
-    this.getFighters('fighters'); // Initial load, you can choose 'ufc' as well
+    this.getFighters(); // Initial load, you can choose 'ufc' as well
   }
   navigateToFighterDetails(fighterId: string) {
     this.route.navigate(['/fighterdetails', fighterId]);
   }
-  
-  getFighters(category: string) {
-    this.fighterService.getFighters(category)
+  getFighters() {
+    this.fighterService.FighterList()
       .subscribe((data) => {
         this.fighters = data;
         this.noFighters = this.fighters.length === 0;
@@ -33,8 +32,9 @@ export class FighterRecordsComponentComponent {
     if (!this.searchTerm.trim()) {
       return;
     }
-    this.fighterService.getFighters('fighters') // Or 'ufc'
+    this.fighterService.FighterList() // Or 'ufcs'
       .subscribe((data) => {
+        console.log(data)
        
         this.fighters = data.filter((fighter) => fighter.name.toLowerCase().includes(this.searchTerm.toLowerCase()));
         this.noFighters = this.fighters.length === 0; // Update noFighters based on the length of fighters array

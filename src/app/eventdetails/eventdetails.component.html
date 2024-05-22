@@ -1,0 +1,44 @@
+<div *ngIf="events">
+    <div class="event-details">
+        <h2>{{ events.event }}</h2>
+        <p>Date: {{ events.date }}</p>
+        <p>Location: {{ events.location }}</p>
+        <img [src]="events.poster" alt="{{ events.event }} Poster" class="event-poster">
+
+        <!-- Main Event Section -->
+        <div class="main-event main-event-animation">
+            <h3 class="event-section-title main-event-title">Main Event</h3>
+            <div *ngIf="events.main_event" class="main-event-fighters">
+                <div class="fighter-container left">
+                    <p class="fighter-name">{{ events.main_event.fighters[0].name }}</p>
+                    <img [src]="events.main_event.fighters[0].photo" alt="{{ events.main_event.fighters[0].name }}" class="fighter-photo">
+                </div>
+                <div class="vs">vs</div>
+                <div class="fighter-container right">
+                    <p class="fighter-name">{{ events.main_event.fighters[1].name }}</p>
+                    <img [src]="events.main_event.fighters[1].photo" alt="{{ events.main_event.fighters[1].name }}" class="fighter-photo">
+                </div>
+            </div>
+            <img *ngIf="events.bout.toLowerCase().includes('championship')" src="assets/cup.jpg" alt="Championship Cup" class="cup-image" style="width: 50px;">
+            <p class="bout">{{ events.bout }}</p>
+        </div>
+
+        <!-- Co-Main Event Section -->
+        <div class="main-event main-event-animation">
+            <h3 class="event-section-title">Co-Main Event</h3>
+            <div *ngIf="events.co_main_event" class="main-event-fighters">
+                <div class="fighter-container left">
+                    <p class="fighter-name">{{ events.co_main_event.fighters[0].name }}</p>
+                    <img [src]="events.co_main_event.fighters[0].photo" alt="{{ events.co_main_event.fighters[0].name }}" class="fighter-photo">
+                </div>
+                <div class="vs">vs</div>
+                <div class="fighter-container right">
+                    <p class="fighter-name">{{ events.co_main_event.fighters[1].name }}</p>
+                    <img [src]="events.co_main_event.fighters[1].photo" alt="{{ events.co_main_event.fighters[1].name }}" class="fighter-photo">
+                </div>
+            </div>
+            <p class="bout">{{ events.co_main_event.bout }}</p>
+            <img *ngIf="events.co_main_event.bout.toLowerCase().includes('championship')" src="assets/cup.jpg" alt="Championship Cup" class="cup-image" style="width: 50px;">
+        </div>
+    </div>
+</div>
